@@ -18,6 +18,11 @@
   margin: 0.5em 0em 0em 0em;
   padding: 1em 8em 0em 8em;
   background-color: #22559c;
+  border: none;
+}
+
+.intro .register-btn-text {
+  font-size: 18px;
 }
 
 .intro .intro-img {
@@ -27,5 +32,17 @@
 
 .intro .intro-txt {
   font-size: 18px;
+}
+
+.intro .slack-btn {
+  margin: 0.5em 0em 0em 0em;
+  padding: 1em 7em 0em 7em;
+  background-color: #fff;
+  border: #22559a 1px solid;
+}
+
+.intro .slack-btn-text {
+  font-size: 18px;
+  color: #22559a;
 }
 /*# sourceMappingURL=styles.css.map */
