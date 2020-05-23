@@ -54,12 +54,19 @@
   color: #22559a;
 }
 
+.custom-toggler.navbar-toggler {
+  border-color: #F8F8F8;
+}
+
 @media only screen and (min-width: 768px) {
   .intro h1 {
     font-size: 60px;
   }
   .intro h6 {
     font-size: 20px;
+  }
+  .intro h4 {
+    font-size: 28px;
   }
   .intro img {
     max-width: 75%;
