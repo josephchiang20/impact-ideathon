@@ -6,17 +6,25 @@
 .intro {
   text-align: center;
   padding: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .intro h1 {
   font-weight: 600;
+  font-size: 36px;
   color: #22559a;
   margin: 0em 0em 0em 0em;
 }
 
+.intro h6 {
+  font-size: 14px;
+}
+
 .intro .register-btn {
   margin: 0.5em 0em 0em 0em;
-  padding: 1em 8em 0em 8em;
+  padding: 1em 5em 0em 5em;
   background-color: #22559c;
   border: #22559a 1px solid;
 }
@@ -36,7 +44,7 @@
 
 .intro .slack-btn {
   margin: 0.5em 0em 0em 0em;
-  padding: 1em 7em 0em 7em;
+  padding: 1em 4em 0em 4em;
   background-color: #fff;
   border: #22559a 1px solid;
 }
@@ -55,6 +63,12 @@
   }
   .intro img {
     max-width: 75%;
+  }
+  .intro .register-btn {
+    padding: 1em 8em 0em 8em;
+  }
+  .intro .slack-btn {
+    padding: 1em 7em 0em 7em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
