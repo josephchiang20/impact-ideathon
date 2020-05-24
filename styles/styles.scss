@@ -4,6 +4,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.nav-item {
+    font-size: 24px;
+    // justify-content: center;
+    // text-align: center;
+    // align-items: center !important;
+    // text-align: left !important;
+}
+
 .intro {
     text-align: center;
     padding: 3em 1em 3em 1em;
@@ -43,6 +51,26 @@
     .slack-btn-text {
         font-size: 18px;
         color: #22559a;
+    }
+}
+
+.team {
+    text-align: center;
+    padding: 2em 1em 2em 1em;
+    justify-content: center;
+    .team-img {
+        max-width: 350px;
+        border-radius: 50%;
+    }
+    .team-member-name {
+        margin-top: 1em;
+        font-weight: 600;
+        font-size: 32px;
+    }
+    .team-member-position {
+        margin-top: 0.5em;
+        font-size: 16px;
+        font-weight: 300;
     }
 }
 
