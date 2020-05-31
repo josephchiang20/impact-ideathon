@@ -15,6 +15,10 @@
   text-align: left !important;
 }
 
+a {
+  color: #22559c;
+}
+
 .subheading {
   text-align: center;
   font-weight: 600;
