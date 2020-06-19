@@ -42,21 +42,38 @@ a {
     h6 {
         font-size: 14px;
     }
-    .register-btn {
-        margin: 0.5em 0em 0em 0em;
-        padding: 1em 6em 0em 6em;
-        background-color: #22559c;
-        border: #22559a 1px solid;
+    
+    .btns {
+        font-weight: 400;
+        border-radius: 10px;
+        border: solid white 1px;
+        font-size: 20px;
+        // background-color: $main-color;
+        justify-content: center;
+        // background-color: #ff5959;
+        background: linear-gradient(to right, #22559c 50%, #ffffff 50%);
+        background-size: 200% 100%;
+        background-position: left bottom;
+        transition: all 0.5s ease;
+        margin: 0.5em 0em 1em 0em;
+        padding: 0.5em 2em 0.5em 2em;
+        outline:none;
+        color:#fff;
     }
-    .register-btn-text {
-        font-size: 18px;
+
+    .btns:hover {
+      border: solid #22559c 1px;
+      color:#22559c;
+      background-position: right bottom;
     }
+
+
     img {
         max-width: 100%;
         margin: 0.5em 0em 0.5em 0em;
     }
     .intro-txt {
-      margin-top: 2em;
+        margin-top: 2em;
         font-size: 18px;
     }
     .slack-btn {
