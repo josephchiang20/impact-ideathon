@@ -11,6 +11,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/72d227a617.js" SameSite="None; Secure" crossorigin="anonymous"></script>
+
     <!-- icon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
@@ -105,6 +108,33 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class = "testimony">
+      <div class="container">
+          <h2 class = "subheading">Testimonials</h2>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width slides/quotes -->
+          <div class="quote mySlides">
+            <blockquote>Impact Ideathon was recommended to me by another technology organization. I was curious about it and when I saw the United Nations Sustainable Development Goals, I was really excited. I decided to register and I was impressed that communication was organized through Slack instead of emails and texts. I was able to meet and connect with multiple smart students my age! I finally felt like I had a support group. The events were well organized and I was very inspired by the speakers’ presentations and life stories. Being my first hackathon, I had no clue where to begin but I was provided numerous resources that I was able to use to design my project. Moreover, we were provided useful workshops with extremely talented and diligent software engineers in the most elite educational institutes and companies. My first hackathon experience was amazing and I am grateful United Engineers and STEMchats were able to help me in each way possible.</blockquote>
+            <b>- Mariana</b>
+            <h6>United States</h6>
+          </div>
+          <div class="quote mySlides">
+            <blockquote>From the workshops to the speakers to the competition itself, there were honestly almost no flaws in the entirety of this ideathon! All of the organizers were extremely nice and accommodating, and I could tell that the planning and execution of the event was done very meticulously. They were very encouraging and the environment they have created allowed everyone to interact freely, learn, and have fun! Even though I attended in another country, which meant all-nighters and waking up early, I would love to do it all over again!</blockquote>
+            <b>- Angela</b>
+            <h6>Philippines</h6>
+          </div>
+          <div class="quote mySlides">
+            <blockquote>Coming into this Ideathon, I was rather anxious as I barely knew anything about conceptualizing projects such as these– I didn’t know how to code extensive programs, nor did I have thorough knowledge on engineering. However, through this event and its workshops, I was able to learn more about various programs, as well as valuable skills, that were able to help me and my team fully develop our idea. This Ideathon was definitely a great learning experience! I can truly say that I learned a lot, not only regarding project planning but also regarding teamwork and coordination. I would certainly participate in one again!</blockquote>
+            <b>- Anna</b>
+            <h6>India</h6>
+          </div>
+          <!-- Next/prev buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </div>
     </section>
     <section class = "main">
         <div class = "container">
@@ -367,11 +397,33 @@
             </div>
         </div>
     </section>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
-    <!-- Optional JavaScript -->
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+        slides[slideIndex-1].style.display = "block";
+      }
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </body>
 </html>

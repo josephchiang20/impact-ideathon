@@ -4,6 +4,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+@mixin center {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .nav-item {
     font-size: 18px;
     justify-content: center;
@@ -42,7 +49,7 @@ a {
     h6 {
         font-size: 14px;
     }
-    
+
     .btns {
         font-weight: 400;
         border-radius: 10px;
@@ -87,6 +94,73 @@ a {
         color: #22559a;
     }
 }
+
+//testimonial
+.quote {
+    @include center();
+    margin-bottom: 2rem;
+
+    blockquote::before,
+    blockquote::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        opacity: 0.25;
+        font-size: 36px;
+        color: #22559a;
+    }
+
+    blockquote::before {
+        content: '\f10d';
+        margin-top: -20px;
+        margin-left: -30px;
+    }
+
+    blockquote::after {
+        content: '\f10e';
+        margin-top: -10px;
+        margin-left: -5px;
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  blockquote {
+    text-align: left;
+  }
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+//team
 
 .team {
     text-align: center;
