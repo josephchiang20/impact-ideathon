@@ -17,6 +17,11 @@
 
 a {
   color: #22559c;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .subheading {
